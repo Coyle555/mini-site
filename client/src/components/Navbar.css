@@ -1,15 +1,21 @@
 .navbar {
-    background: teal;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  background: teal;
+  border: 1px solid black;
+  text-align: center;
+  padding: 40px;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  height: 85px;
+  width: 100%;
   }
-  
+  .font-link {
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
   .navbar-container {
     display: flex;
     justify-content: center;
@@ -27,9 +33,10 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
+    padding-bottom: 20px;
   }
   
-  .fa-star {
+  .fa-golf-ball {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     font-size: 1.8rem;
@@ -48,6 +55,7 @@
   
   .nav-item {
     height: 80px;
+    padding: 20px;
   }
   
   .nav-links {
