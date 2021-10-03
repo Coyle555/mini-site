@@ -19,6 +19,10 @@ function Register() {
         })
         .then(res => {
             console.log(res.data)
+            setData({
+                name: '',
+                email: ''
+            })
         })
     }
 
