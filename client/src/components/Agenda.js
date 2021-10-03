@@ -6,11 +6,11 @@ import './Agenda.css'
 function Agenda() {
     return (
         <>
-        <Container className='center'>
+        <Container className='center font-link'>
         <Accordion defaultActiveKey="0">
-        <Accordion.Item className= 'row'eventKey="0">
-          <Accordion.Header className='row'>Agenda Event 1</Accordion.Header>
-          <Accordion.Body className='row'>
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>Agenda Event 1</Accordion.Header>
+          <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -20,9 +20,9 @@ function Agenda() {
             est laborum.
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item className='row' eventKey="1">
-          <Accordion.Header className='row'>Agenda Event 2</Accordion.Header>
-          <Accordion.Body className='row'>
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>Agenda Event 2</Accordion.Header>
+          <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -32,9 +32,9 @@ function Agenda() {
             est laborum.
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item className='row' eventKey="2">
-          <Accordion.Header className='row'>Agenda Event 3</Accordion.Header>
-          <Accordion.Body className='row'>
+        <Accordion.Item eventKey="2">
+          <Accordion.Header >Agenda Event 3</Accordion.Header>
+          <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -44,9 +44,9 @@ function Agenda() {
             est laborum.
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item className='row' eventKey="3">
-          <Accordion.Header className='row'>Agenda Event 4</Accordion.Header>
-          <Accordion.Body className='row'>
+        <Accordion.Item eventKey="3">
+          <Accordion.Header>Agenda Event 4</Accordion.Header>
+          <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -56,9 +56,9 @@ function Agenda() {
             est laborum.
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item className='row' eventKey="4">
-          <Accordion.Header className='row'>Agenda Event 5</Accordion.Header>
-          <Accordion.Body className='row'>
+        <Accordion.Item  eventKey="4">
+        <Accordion.Header>Agenda Event 5</Accordion.Header>
+        <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
