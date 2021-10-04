@@ -1,12 +1,15 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
+import golf from '../images/background2.jpg'
+import title from '../images/title.svg'
+
 
 function Home() {
     return (
         <>
-        <Container className='middle'>
-            <h3>Welcome to Building Blocks for Kids 1st anual golf outing!</h3>
-        </Container>
+        <div style={{ background: `url(${golf})`, backgroundSize: 'cover', backgroundPosition: 'bottom center', width:'100%'}} className='middle'>
+            <img alt='BBK' src={title} style={{width: '70%', margin: '0px 15%', maxWidth: '600px'}}></img>
+        </div>
         </>
     )
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 
 var style = {
-    backgroundColor: "rgba(43, 153, 226, 0.747)",
-    borderTop: "1px solid #E7E7E7",
+    backgroundColor: "#5ba7dc",
+    borderTop: "0px solid #E7E7E7",
     textAlign: "center",
     padding: "20px",
     position: "fixed",

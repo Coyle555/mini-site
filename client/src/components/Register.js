@@ -3,6 +3,7 @@ import Axios from 'axios'
 import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
 import './Register.css'
+import golf from '../images/background2.jpg'
 
 function Register() {
     const url ='http://localhost:3002/api'
@@ -43,7 +44,7 @@ function Register() {
     }
     return (
         <>
-            <Container className='middle font-link'>
+            <div style={{ background: `url(${golf})`, backgroundSize: 'cover', backgroundPosition: 'bottom center', width:'100%'}} className='middle'>
             <Row className='tag'>
             <Col>
             <h4>Please fill out the form below to register!</h4>
@@ -80,7 +81,7 @@ function Register() {
             </Card>
             </Col>
             </Row>
-            </Container>
+            </div>
                     
         </>
     )
