@@ -1,21 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-// import { Button } from './Button';
 import './Navbar.css'
 
 function Navbar() {
-//     const [data, setData] = React.useState(null);
-
-//   React.useEffect(() => {
-//     fetch("/api")
-//       .then((res) => res.json())
-//       .then((data) => setData(data.name));
-//   }, []);
-
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
-
 
     return (
         <>

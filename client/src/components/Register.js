@@ -73,7 +73,7 @@ function Register() {
                     </Form.Group>
                     <br></br>
                     <Form.Group>
-                        <Button onClick={(e) => submit(e)}>Register!</Button>
+                        <Button style={{background: 'rgba(43, 153, 226, 0.747)'}} onClick={(e) => submit(e)}>Register!</Button>
                     </Form.Group>
                     </Form>
             </Card.Body>
