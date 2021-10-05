@@ -48,7 +48,7 @@ function Register() {
             <Row className='tag'>
             <Col>
             <h4 style={{color: 'white'}}>Please fill out the form below to register!</h4>
-            <Card className='mt-5' style={{ width: '30rem', height:'28rem' }}>
+            <Card className='mt-5' style={{ width: '25rem', height:'28rem' }}>
             <Card.Header>Registration</Card.Header>
             <Card.Body>
                     <Form>
