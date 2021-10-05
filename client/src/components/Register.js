@@ -6,7 +6,7 @@ import './Register.css'
 import golf from '../images/background2.jpg'
 
 function Register() {
-    const url ='https://615876535167ba00174bbb0e.mockapi.io/api/register'
+    const url ='http://localhost:3002/api'
     const [data, setData] = useState({
         name: '',
         email: '',

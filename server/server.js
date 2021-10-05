@@ -16,17 +16,17 @@ app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.use('/images', express.static(path.join(__dirname, '../client/build/images')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
+
 
 
 app.get("/api", (req, res) => {
     res.send(users)
   });
 
-app.post('/register', (req, res) => {
-    res.send(req.body)
+app.post('/api', (req, res) => {
+    const user = req.body
+    users.push(user)
+    res.send('Added!')
 })
 
 app.listen(PORT, () => {
