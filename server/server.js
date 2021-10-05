@@ -1,11 +1,6 @@
-import express from 'express'
-import bodyParser from 'body-parser';
-import path from 'path'
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const express = require('express')
+const bodyParser = require('body-parser');
+const path = require('path')
 
 
 const PORT = process.env.PORT || 3002;
@@ -16,14 +11,14 @@ app.use(bodyParser.json())
 
 const users = []
 
-app.use(express.static(path.join(__dirname, '../client/build')));
 
+  app.use(express.static(path.join(__dirname, '../client/build')));
 
+app.use('/images', express.static(path.join(__dirname, '../client/build/images')));
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
-
 
 
 app.get("/api", (req, res) => {

@@ -6,7 +6,7 @@ import './Register.css'
 import golf from '../images/background2.jpg'
 
 function Register() {
-    const url ='http://localhost:3002/api'
+    const url ='https://615876535167ba00174bbb0e.mockapi.io/api/register'
     const [data, setData] = useState({
         name: '',
         email: '',
@@ -47,7 +47,7 @@ function Register() {
             <div style={{ background: `url(${golf})`, backgroundSize: 'cover', backgroundPosition: 'bottom center', width:'100%'}} className='middle'>
             <Row className='tag'>
             <Col>
-            <h4>Please fill out the form below to register!</h4>
+            <h4 style={{color: 'white'}}>Please fill out the form below to register!</h4>
             <Card className='mt-5' style={{ width: '30rem', height:'28rem' }}>
             <Card.Header>Registration</Card.Header>
             <Card.Body>
