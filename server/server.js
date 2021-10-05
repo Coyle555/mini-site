@@ -12,9 +12,10 @@ app.use(bodyParser.json())
 const users = []
 
 
-app.use(express.static(path.join(__dirname, '../client/build')));
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
 
-app.use('/images', express.static(path.join(__dirname, '../client/build/images')));
 
 
 
@@ -26,7 +27,7 @@ app.get("/api", (req, res) => {
 app.post('/api', (req, res) => {
     const user = req.body
     users.push(user)
-    res.send('Added!')
+    res.send(`${user.name} has registered!`)
 })
 
 app.listen(PORT, () => {

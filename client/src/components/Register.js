@@ -6,7 +6,7 @@ import './Register.css'
 import golf from '../images/background2.jpg'
 
 function Register() {
-    const url ='http://localhost:3002/api'
+    const url ='https://gentle-earf-0092.herokuapp.com/api'
     const [data, setData] = useState({
         name: '',
         email: '',
