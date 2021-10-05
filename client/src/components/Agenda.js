@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, Accordion, Button, Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
 import './Agenda.css'
 import golf from '../images/background2.jpg'
@@ -27,7 +27,6 @@ function Agenda() {
           <Card.Body>
             <Card.Title>Click below to switch between event sections</Card.Title>
             <Card.Text>
-              The events scheduled to take place during the outing are listed below!
             </Card.Text>
             <Button onClick={handleClick}>Click to flip</Button>
           </Card.Body>

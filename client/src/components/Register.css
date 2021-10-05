@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 148px);;
+    height: calc(100vh - 148px);
 }
 .tag {
     padding-top: 10px;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
+import logo from '../images/logo.svg'
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -11,9 +12,7 @@ function Navbar() {
         <>
             <nav className='navbar font-link'>
                 <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo'>
-                        Golf Outing <i className='fas fa-golf-ball' />
-                    </Link>
+                    <a href='/' style={{height:'300px', width:'300px'}}><img alt='nav-logo' src={logo} /> </a>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fa fa-solid fa-xing' : "fa fa-solid fa-bars"} />
                     </div>

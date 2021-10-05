@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
 import golf from '../images/background2.jpg'
 import title from '../images/title.svg'
 

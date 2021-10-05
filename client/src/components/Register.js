@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Axios from 'axios'
-import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
+import { Row, Col, Card, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
 import './Register.css'
 import golf from '../images/background2.jpg'
