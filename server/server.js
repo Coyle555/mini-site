@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 const users = []
 
 
-  app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.use('/images', express.static(path.join(__dirname, '../client/build/images')));
 
@@ -25,10 +25,8 @@ app.get("/api", (req, res) => {
     res.send(users)
   });
 
-app.post('/api', (req, res) => {
-    const user = req.body
-    users.push(user)
-    res.send('Added!')
+app.post('/register', (req, res) => {
+    res.send(req.body)
 })
 
 app.listen(PORT, () => {
