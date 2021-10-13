@@ -4,19 +4,32 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './Agenda.css'
 import golf from '../images/background2.jpg'
 import ReactCardFlip from 'react-card-flip'
+import { Helmet } from 'react-helmet'
 
 
 
 
 function Agenda() {
-  document.title = 'Agenda'
   const [isFlipped, setIsFlipped] = useState(false)
   const handleClick = () => {
     setIsFlipped(!isFlipped);
   }
     return (
         <>
-        <div style={{ background: `url(${golf})`, backgroundSize: 'cover', backgroundPosition: 'bottom center', width:'100%'}} className='middle'>
+        <Helmet>
+            <title>Agenda</title>
+            <meta 
+            name='description'
+            description='Agenda for all the events that are going to take place at the outing.' 
+            />
+            <meta 
+            name='keywords'
+            content='building, blocks, kids, golf, outing, agenda, food, drinks, lunch, dinner'
+            />
+        </Helmet>
+        <div style={{ background: `url(${golf})`, backgroundSize: 'cover', backgroundPosition: 'bottom center', width:'100%'}}
+         className='middle'
+         >
         <div>
         <ReactCardFlip flipDirection="vertical">
         <Card>

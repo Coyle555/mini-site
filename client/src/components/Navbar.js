@@ -12,7 +12,7 @@ function Navbar() {
         <>
             <nav className='navbar font-link'>
                 <div className='navbar-container'>
-                    <a href='/'  className='nav-logo' style={{height:'300px', width:'300px'}}><img alt='nav-logo' src={logo} /> </a>
+                    <a href='/'  className='nav-logo' style={{width:'300px'}}><img alt='nav-logo' src={logo} /> </a>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fa fa-solid fa-xing' : "fa fa-solid fa-bars"} />
                     </div>

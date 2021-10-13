@@ -4,9 +4,9 @@ import { Row, Col, Card, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
 import './Register.css'
 import golf from '../images/background2.jpg'
+import { Helmet } from 'react-helmet'
 
 function Register() {
-    document.title = 'Register'
     const [errors, setErrors] = useState({})
 
     const url ='https://615876535167ba00174bbb0e.mockapi.io/api/register'
@@ -67,102 +67,113 @@ function Register() {
     }
     return (
         <>
-            <div style={{ background: `url(${golf})`, backgroundSize: 'cover', backgroundPosition: 'bottom center', width:'100%'}} className='middle'>
-            <Row className='tag font-link'>
-            <Col>
-            <Card style={{ width: '30rem'}}>
-            <Card.Header>Registration</Card.Header>
-            <Card.Body>
-                    <Form >
-                    <Form.Group >
-                    <Form.Label htmlFor='name'></Form.Label>
-                        <Form.Control
-                            style={{padding:'3px'}} 
-                            onChange={handleSubmit}
-                            id='name' 
-                            value={data.name} 
-                            placeholder='First and Last Name' 
-                            type='text'
-                            isInvalid={errors.name} />
-                        <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
-                            {errors.name}
-                        </Form.Control.Feedback>
-                    </Form.Group>
-                    <Form.Group>
-                    <Form.Label htmlFor='email'></Form.Label>
-                        <Form.Control
-                            style={{padding:'3px'}} 
-                            onChange={handleSubmit}
-                            id='email' value={data.email} 
-                            placeholder='Email Address' 
-                            type='email'
-                            isInvalid={errors.email} />
-                        <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
-                            {errors.email}
-                        </Form.Control.Feedback>
-                    </Form.Group>
-                    <Form.Group>
-                    <Form.Label htmlFor='phone'></Form.Label>
-                        <Form.Control
-                            style={{padding:'3px'}} 
-                            onChange={handleSubmit} 
-                            id='phoneNum' value={data.phoneNum} 
-                            placeholder='Phone Number (5555555555)' 
-                            type='number'
-                            isInvalid={errors.phoneNum} />
+        <Helmet>
+            <title>Register</title>
+            <meta 
+            name='description'
+            description='Fill out the form to register for the golf outing.' 
+            />
+            <meta 
+            name='keywords'
+            content='building, blocks, kids, golf, outing, register, email, phone, shirt'
+            />
+        </Helmet>
+        <div style={{ background: `url(${golf})`, backgroundSize: 'cover', backgroundPosition: 'bottom center', width:'100%'}} className='middle'>
+        <Row className='tag font-link'>
+        <Col>
+        <Card style={{ width: '25rem'}}>
+        <Card.Header>Registration</Card.Header>
+        <Card.Body>
+                <Form >
+                <Form.Group >
+                <Form.Label htmlFor='name'></Form.Label>
+                    <Form.Control
+                        style={{padding:'3px'}} 
+                        onChange={handleSubmit}
+                        id='name' 
+                        value={data.name} 
+                        placeholder='First and Last Name' 
+                        type='text'
+                        isInvalid={errors.name} />
                     <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
-                        {errors.phoneNum}
+                        {errors.name}
                     </Form.Control.Feedback>
-                    </Form.Group>
-                    <Form.Group>
-                    <Form.Label htmlFor='shirtSize'></Form.Label>
-                        <Form.Control
-                            style={{padding:'3px'}}
-                            as='select' 
-                            onChange={handleSubmit} 
-                            id='shirt' value={data.shirt} 
-                            placeholder='Select a shirt size'
-                            isInvalid={errors.shirt}>
-                                <option value=''>Select a shirt size</option>
-                                <option value='small'>Small</option>
-                                <option value='medium'>Medium</option>
-                                <option value='large'>Large</option>
-                                <option value='xl'>Extra Large</option>
-                        </Form.Control>
-                        <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
-                            {errors.shirt}
-                        </Form.Control.Feedback>
-                    </Form.Group>
-                    <Form.Group>
-                    <Form.Label htmlFor='handicap'></Form.Label>
-                        <Form.Control
-                            style={{padding:'3px'}} 
-                            onChange={handleSubmit} 
-                            id='handicap' value={data.handicap} 
-                            placeholder='Golf Handicap (+)' 
-                            type='number' 
-                            isInvalid={errors.handicap}/>
-                        <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
-                            {errors.handicap}
-                        </Form.Control.Feedback>
-                    </Form.Group>
-                    <br></br>
-                    <Form.Group>
-                        <Button 
-                            style={{background: 'rgba(43, 153, 226, 0.747)',
-                            paddingLeft:'3px',
-                            paddingBottom:'0.5px',
-                            paddingRight:'3px', paddingTop:'0.5px',
-                            fontSize:'17px'}} 
-                            onClick={submit}>Register
-                        </Button>
-                    </Form.Group>
-                    </Form>
-            </Card.Body>
-            </Card>
-            </Col>
-            </Row>
-            </div>
+                </Form.Group>
+                <Form.Group>
+                <Form.Label htmlFor='email'></Form.Label>
+                    <Form.Control
+                        style={{padding:'3px'}} 
+                        onChange={handleSubmit}
+                        id='email' value={data.email} 
+                        placeholder='Email Address' 
+                        type='email'
+                        isInvalid={errors.email} />
+                    <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
+                        {errors.email}
+                    </Form.Control.Feedback>
+                </Form.Group>
+                <Form.Group>
+                <Form.Label htmlFor='phone'></Form.Label>
+                    <Form.Control
+                        style={{padding:'3px'}} 
+                        onChange={handleSubmit} 
+                        id='phoneNum' value={data.phoneNum} 
+                        placeholder='Phone Number (5555555555)' 
+                        type='number'
+                        isInvalid={errors.phoneNum} />
+                <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
+                    {errors.phoneNum}
+                </Form.Control.Feedback>
+                </Form.Group>
+                <Form.Group>
+                <Form.Label htmlFor='shirtSize'></Form.Label>
+                    <Form.Control
+                        style={{padding:'3px'}}
+                        as='select' 
+                        onChange={handleSubmit} 
+                        id='shirt' value={data.shirt} 
+                        placeholder='Select a shirt size'
+                        isInvalid={errors.shirt}>
+                            <option value=''>Select a shirt size</option>
+                            <option value='small'>Small</option>
+                            <option value='medium'>Medium</option>
+                            <option value='large'>Large</option>
+                            <option value='xl'>Extra Large</option>
+                    </Form.Control>
+                    <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
+                        {errors.shirt}
+                    </Form.Control.Feedback>
+                </Form.Group>
+                <Form.Group>
+                <Form.Label htmlFor='handicap'></Form.Label>
+                    <Form.Control
+                        style={{padding:'3px'}} 
+                        onChange={handleSubmit} 
+                        id='handicap' value={data.handicap} 
+                        placeholder='Golf Handicap (+)' 
+                        type='number' 
+                        isInvalid={errors.handicap}/>
+                    <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
+                        {errors.handicap}
+                    </Form.Control.Feedback>
+                </Form.Group>
+                <br></br>
+                <Form.Group>
+                    <Button 
+                        style={{background: 'rgba(43, 153, 226, 0.747)',
+                        paddingLeft:'3px',
+                        paddingBottom:'0.5px',
+                        paddingRight:'3px', paddingTop:'0.5px',
+                        fontSize:'17px'}} 
+                        onClick={submit}>Register
+                    </Button>
+                </Form.Group>
+                </Form>
+        </Card.Body>
+        </Card>
+        </Col>
+        </Row>
+        </div>
                     
         </>
     )
