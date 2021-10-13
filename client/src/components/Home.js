@@ -4,6 +4,7 @@ import title from '../images/title.svg'
 
 
 function Home() {
+    document.title = 'BBK Golf Outing'
     return (
         <>
         <div style={{ background: `url(${golf})`, backgroundSize: 'cover', backgroundPosition: 'bottom center', width:'100%'}} className='middle'>

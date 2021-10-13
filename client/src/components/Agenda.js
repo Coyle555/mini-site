@@ -9,19 +9,16 @@ import ReactCardFlip from 'react-card-flip'
 
 
 function Agenda() {
+  document.title = 'Agenda'
   const [isFlipped, setIsFlipped] = useState(false)
   const handleClick = () => {
     setIsFlipped(!isFlipped);
-  }
-  const [isFlipped1, setIsFlipped1] = useState(false)
-  const handleClick1 = () => {
-    setIsFlipped1(!isFlipped1);
   }
     return (
         <>
         <div style={{ background: `url(${golf})`, backgroundSize: 'cover', backgroundPosition: 'bottom center', width:'100%'}} className='middle'>
         <div>
-        <ReactCardFlip isFlipped={isFlipped1} flipDirection="vertical">
+        <ReactCardFlip flipDirection="vertical">
         <Card>
           <Card.Header as="h5">Event List for the Day</Card.Header>
           <Card.Body>
@@ -31,16 +28,7 @@ function Agenda() {
             <Button onClick={handleClick}>Click to flip</Button>
           </Card.Body>
         </Card>
-
         <Card>
-          <Card.Header as="h5">Events</Card.Header>
-          <Card.Body>
-            <Card.Title>Special title treatment</Card.Title>
-            <Card.Text>
-              With supporting text below as a natural lead-in to additional content.
-            </Card.Text>
-            <Button style={{display: 'flex', alignItems: 'center'}} onClick={handleClick}>Click to flip</Button>
-          </Card.Body>
         </Card>
       </ReactCardFlip>
       <br></br>

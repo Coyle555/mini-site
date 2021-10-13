@@ -5,11 +5,7 @@
     height: calc(100vh - 148px);
 }
 .tag {
-    padding-top: 10px;
     text-align: center;
-}
-.button {
-    
 }
 .font-link {
     font-family: 'Montserrat';
