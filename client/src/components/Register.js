@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet'
 function Register() {
     const [errors, setErrors] = useState({})
 
-    const url ='https://615876535167ba00174bbb0e.mockapi.io/api/register'
+    const url ='https://gentle-earf-0092.herokuapp.com/api'
     const [data, setData] = useState({
         name: '',
         email: '',
