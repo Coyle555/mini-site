@@ -81,7 +81,7 @@ function Register() {
         <div style={{ background: `url(${golf})`, backgroundSize: 'cover', backgroundPosition: 'bottom center', width:'100%'}} className='middle'>
         <Row className='tag font-link'>
         <Col>
-        <Card style={{ width: '25rem'}}>
+        <Card style={{ width: '24rem'}}>
         <Card.Header>Registration</Card.Header>
         <Card.Body>
                 <Form >
@@ -95,7 +95,7 @@ function Register() {
                         placeholder='First and Last Name' 
                         type='text'
                         isInvalid={errors.name} />
-                    <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
+                    <Form.Control.Feedback type='invalid'>
                         {errors.name}
                     </Form.Control.Feedback>
                 </Form.Group>
@@ -108,7 +108,7 @@ function Register() {
                         placeholder='Email Address' 
                         type='email'
                         isInvalid={errors.email} />
-                    <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
+                    <Form.Control.Feedback type='invalid'>
                         {errors.email}
                     </Form.Control.Feedback>
                 </Form.Group>
@@ -121,7 +121,7 @@ function Register() {
                         placeholder='Phone Number (5555555555)' 
                         type='number'
                         isInvalid={errors.phoneNum} />
-                <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
+                <Form.Control.Feedback type='invalid'>
                     {errors.phoneNum}
                 </Form.Control.Feedback>
                 </Form.Group>
@@ -140,7 +140,7 @@ function Register() {
                             <option value='large'>Large</option>
                             <option value='xl'>Extra Large</option>
                     </Form.Control>
-                    <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
+                    <Form.Control.Feedback type='invalid'>
                         {errors.shirt}
                     </Form.Control.Feedback>
                 </Form.Group>
@@ -153,7 +153,7 @@ function Register() {
                         placeholder='Golf Handicap (+)' 
                         type='number' 
                         isInvalid={errors.handicap}/>
-                    <Form.Control.Feedback style={{fontSize: '11px'}} type='invalid'>
+                    <Form.Control.Feedback type='invalid'>
                         {errors.handicap}
                     </Form.Control.Feedback>
                 </Form.Group>
